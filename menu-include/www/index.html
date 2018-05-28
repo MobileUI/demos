@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+        <meta name="format-detection" content="telephone=no">
+        <meta charset="utf-8">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Apache Cordova</title>
+    </head>
+    <body>
+
+      <div class="menu red padding" id="myMenu">
+        <button class="white full margin-bottom" onclick="include('myFrame', 'page1');closeMenu('myMenu')">Page1</button>
+        <button class="white full margin-bottom" onclick="include('myFrame', 'page2');closeMenu('myMenu')">Page2</button>
+        <button class="white full margin-bottom" onclick="include('myFrame', 'page3');closeMenu('myMenu')">Page3</button>
+      </div>
+
+      <div class="header red">
+        <button class="left icon ion-navicon" onclick="openMenu('myMenu')"></button>
+        <h1>Demo menu and include</h1>
+      </div>
+
+      <div class="content has-header" id="myFrame">
+        
+      </div>
+      
+      <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="mobileui/mobileui.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>MobileUI - The UI components for web mobile apps - Demos</title>
+    <meta name="description" content="Nice UI components for web mobile apps." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="The UI components for web mobile apps" />
+    <meta property="og:site_name" content="MobileUI" />
+    <meta property="og:url" content="https://mobileui.github.io" />
+    <meta property="og:image" content="https://mobileui.github.io/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Chewy|Dosis|Monoton|Raleway:300,400,700|Roboto:300,400,900|Open+Sans:300," rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+    <link rel="stylesheet" href="/mobileui/imports.css">
+    <link rel="stylesheet" href="/css/master.css">
+    <link rel="stylesheet" href="/mobileui/chartist-plugin-tooltip.min.css">
+    <style>
+    #frameDemo {
+        width: 400px;
+        height: 100%;
+        border: 15px solid #24292e;
+    }
+    .myFrame {
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 99;
+        background-color: #24292e;
+        display: none;
+        height: 100%;
+    }
+    @media only screen and (min-height: 670px) {
+        #frameDemo {
+            height: 650px;
+        }
+    }
+    </style>
+  </head>
+  <body>
+      <div class="myFrame">
+          <iframe id="frameDemo"></iframe>
+      </div>
+    <div class="top font-dosis">
+      <a href="/"><img src="/img/logo.png" alt="MobileUI"></a>
+      <iframe class="header-star" src="https://ghbtns.com/github-btn.html?user=MobileUI&amp;repo=components&amp;type=star" frameborder="0" scrolling="0" width="55" height="20"></iframe>
+      <ul>
+        <li>
+          <a href="https://mobileui.github.io/">HOME</a>
+        </li>
+        <li>
+          <a href="https://mobileui.github.io/#getting-started">GETTING STARTED</a>
+        </li>
+        <li>
+          <a href="https://mobileui.github.io/#colors">DOCS</a>
+        </li>
+        <li>
+          <a href="https://github.com/mobileui/components">GITHUB</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content-list-demo padding">
+    <div class="item-demo">
+        <h1 class="text-strong">Menu and Include</h1>
+        <p>Using Menu for open a new page inside the self page.</p>
+        <button class="border-blue blue radius small" onclick="runDemo('menu-include')">Run demo</button>
+        <button class="border-blue text-blue radius small" onclick="openSource('menu-include')">Source Code</button>
+        <div class="line margin-bottom"></div>
+    </div>
+    
+    <div class="item-demo">
+        <h1 class="text-strong">Menu and Page</h1>
+        <p>Using Menu for opne a diferent pages.</p>
+        <button class="border-blue blue radius small" onclick="runDemo('menu-page')">Run demo</button>
+        <button class="border-blue text-blue radius small" onclick="openSource('menu-page')">Source Code</button>
+        <div class="line margin-bottom"></div>
+    </div>
+    </div>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.2/mode/javascript/javascript.min.js"></script>
+    <script type="text/javascript" src="/mobileui/base.min.js"></script>
+    <script type="text/javascript" src="/mobileui/button.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-100441135-1', 'auto');
+      ga('send', 'pageview');
+
+
+        function openSource(key) {
+            var win = window.open('https://github.com/MobileUI/demos/'+key+'/www', '_blank')
+            win.focus()
+        }
+
+        function runDemo(key) {
+            document.querySelector('.myFrame').style.display="block"
+            document.getElementById('frameDemo').src = location.origin + "/demos/" + key + "/www/index.html"
+        }
+    </script>
+  </body>
+</html>

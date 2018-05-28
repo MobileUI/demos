@@ -1,0 +1,18 @@
+{
+    "site_dir": "../mobileui.github.io",
+    "demos": [
+      {
+        "key": "menu-include",
+        "label":"Menu and Include",
+        "description": "Using Menu for open a new page inside the self page.",
+        "path":"./menu-include"
+      },
+      {
+        "key": "menu-page",
+        "label":"Menu and Page",
+        "description": "Using Menu for opne a diferent pages.",
+        "path":"./menu-page"
+      }
+    ]
+  }
+  
