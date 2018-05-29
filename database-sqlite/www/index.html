@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+        <meta name="format-detection" content="telephone=no">
+        <meta charset="utf-8">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Apache Cordova</title>
+    </head>
+    <body>
+
+        <div class="content">
+            <div class="list" id="myForm">
+                <div class="item">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="item">
+                    <label for="email">E-mail:</label>
+                    <input type="text" name="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="item">
+                    <button class="red full" onclick="save()">Save</button>
+                </div>
+            </div>
+            <div class="list">
+                <div class="item" data="CONTACTS">
+                    <h2>${name}</h2>
+                    <p>${email}</p>
+                    <div class="right">
+                        <button class="ion-edit blue" onclick="edit(${id})"></button>
+                        <button class="ion-trash-a red" onclick="remove(${id})"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+      <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="mobileui/mobileui.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

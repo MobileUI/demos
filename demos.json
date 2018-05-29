@@ -12,6 +12,12 @@
         "label":"Menu and Page",
         "description": "Using Menu for opne a diferent pages.",
         "path":"./menu-page"
+      },
+      {
+        "key": "database-sqlite",
+        "label":"Database SQLite",
+        "description": "Simple operations with SQLite.",
+        "path":"./database-sqlite"
       }
     ]
   }
