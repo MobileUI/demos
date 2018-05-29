@@ -1,5 +1,6 @@
 {
     "site_dir": "../mobileui.github.io",
+    "mock_dir": "../mobileui/mock/cordova.js",
     "demos": [
       {
         "key": "menu-include",

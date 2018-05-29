@@ -22,6 +22,8 @@ for (var i in demos.demos) {
         <div class="line margin-bottom"></div>
     </div>
     `
+  fs.writeFileSync(path.join(item.path, 'www', 'cordova.js'), fs.readFileSync(path.join(demos.mock_dir), { encoding: 'utf-8' }))
+
   wrench.copyDirSyncRecursive(item.path, path.join('./dist', item.key), {
     forceDelete: true
   })

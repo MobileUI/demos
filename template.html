@@ -99,13 +99,14 @@
 
 
         function openSource(key) {
-            var win = window.open('https://github.com/MobileUI/demos/'+key+'/www', '_blank')
+            var win = window.open('https://github.com/MobileUI/demos/tree/master/'+key+'/www', '_blank')
             win.focus()
         }
 
         function runDemo(key) {
             document.querySelector('.myFrame').style.display="block"
-            document.getElementById('frameDemo').src = location.origin + "/demos/tree/master/" + key + "/www/index.html"
+            document.getElementById('frameDemo').src = location.origin + "/demos/" + key + "/www/index.html"
+            
         }
     </script>
   </body>
