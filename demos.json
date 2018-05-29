@@ -19,6 +19,12 @@
         "label":"Database SQLite",
         "description": "Simple operations with SQLite.",
         "path":"./database-sqlite"
+      },
+      {
+        "key": "gallery-grid",
+        "label":"Gallery with Grid and Page",
+        "description": "Example using grid and page for create a simple gallery.",
+        "path":"./gallery-grid"
       }
     ]
   }

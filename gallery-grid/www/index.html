@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+        <meta name="format-detection" content="telephone=no">
+        <meta charset="utf-8">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Apache Cordova</title>
+    </head>
+    <body>
+        <div class="header green">
+            <h1>Demo Gallery with Grid</h1>
+        </div>
+
+        <div class="content has-header black">
+            <div class="row">
+                <div class="col margin" onclick="showImage('image1')">
+                    <div class="gradient bottom padding text-white">
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                    <img id="image1" src="https://images.unsplash.com/photo-1526573461737-b504d8040d92?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=400&fit=crop&ixid=eyJhcHBfaWQiOjF9&s=64e8881f49bd1cef799f53b0f9304cd9">
+                </div>
+                <div class="col margin" onclick="showImage('image2')">
+                    <div class="gradient bottom padding text-white">
+                        Consectetur adipisicing elit.
+                    </div>
+                    <img id="image2" src="https://images.unsplash.com/photo-1525611037873-4c95874d0e6d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=400&fit=crop&ixid=eyJhcHBfaWQiOjF9&s=1060653b340b5ed98968ca9b675896c7">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col margin"  onclick="showImage('image3')">
+                    <div class="gradient bottom padding text-white">
+                        Consectetur adipisicing elit.
+                    </div>
+                    <img id="image3" src="https://images.unsplash.com/photo-1525883405167-fc4e76c7713a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=400&fit=crop&ixid=eyJhcHBfaWQiOjF9&s=d7f37d464b1f605395f7458e64771a55">
+                </div>
+                <div class="col margin"  onclick="showImage('image4')">
+                    <div class="gradient bottom padding text-white">
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                    <img id="image4" src="https://images.unsplash.com/photo-1525515159172-51a4346b769f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=400&fit=crop&ixid=eyJhcHBfaWQiOjF9&s=ae5fcf2629079b39c196a3e912c51e4f">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col margin"  onclick="showImage('image5')">
+                    <div class="gradient bottom padding text-white">
+                            Lorem ipsum dolor sit amet.
+                    </div>
+                    <img id="image5" src="https://images.unsplash.com/photo-1527075240784-552cddfbb143?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=400&fit=crop&ixid=eyJhcHBfaWQiOjF9&s=f454a2250db9e171a43cb5828555da99">
+                </div>
+                <div class="col margin"  onclick="showImage('image6')">
+                    <div class="gradient bottom padding text-white">
+                        Consectetur adipisicing elit.
+                    </div>
+                    <img id="image6" src="https://images.unsplash.com/photo-1526931111943-ca30f2d61dbf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=400&fit=crop&ixid=eyJhcHBfaWQiOjF9&s=3eceab7746f0a97adf43ae067833bb2b">
+                </div>
+            </div>
+        </div>
+
+      
+      <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="mobileui/mobileui.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
