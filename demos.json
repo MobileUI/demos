@@ -3,6 +3,12 @@
     "mock_dir": "../mobileui/mock/cordova.js",
     "demos": [
       {
+        "key": "page",
+        "label":"Using component page",
+        "description": "Simple example using page and function exec after open new page.",
+        "path":"./page"
+      },
+      {
         "key": "menu-include",
         "label":"Menu and Include",
         "description": "Using Menu for open a new page inside the self page.",
@@ -25,6 +31,12 @@
         "label":"Gallery with Grid and Page",
         "description": "Example using grid and page for create a simple gallery.",
         "path":"./gallery-grid"
+      },
+      {
+        "key": "mobileuijs",
+        "label":"Loop using data bind and custom function",
+        "description": "Creating a function for exec in iteraction loop.",
+        "path":"./mobileuijs"
       }
     ]
   }
