@@ -37,6 +37,12 @@
         "label":"Loop using data bind and custom function",
         "description": "Creating a function for exec in iteraction loop.",
         "path":"./mobileuijs"
+      },
+      {
+        "key": "zoom-image",
+        "label":"Make zoom in image",
+        "description": "Using inappbrowser for make zoom in image.",
+        "path":"./zoom-image"
       }
     ]
   }
